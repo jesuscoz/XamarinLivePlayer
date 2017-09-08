@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Converters"
+             x:Class="Converters.MainPage">
+
+	<Label Text="Converters on Xamarin Live Player" 
+           VerticalOptions="Center" 
+           HorizontalOptions="Center" />
+
+    <ListView
+        ItemsSource="{Binding Elements}">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <TextCell Text="{Binding ., Converter={StaticResource UpperCaseConverter}}" />
+            </DataTemplate>
+        </ListView.ItemTemplate>
+
+
+    </ListView>
+
+</ContentPage>

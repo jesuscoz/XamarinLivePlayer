@@ -1,0 +1,7 @@
+Converters/packages*
+Converters/Converters/Converters/obj/*
+Converters/Converters/Converters/bin/*
+Converters/Converters/Converters.iOS/obj/*
+Converters/Converters/Converters.Android/obj/*
+Converters/Converters/Converters.Android/bin/*
+Converters/.vs/*
